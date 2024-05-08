@@ -12,7 +12,8 @@ st.set_page_config(layout="wide")
 
 
 # lendo o arquivo csv, usando seu separados e informando que os decimais são vírgula
-df = pd.read_csv("supermarket_sales.csv", sep=";", decimal=",")
+df = pd.read_csv("./supermarket_sales.csv", sep=";", decimal=",")
+
 
 # definindo a data como apenas horário
 df["Date"] = pd.to_datetime(df["Date"])
